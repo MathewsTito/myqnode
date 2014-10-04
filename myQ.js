@@ -186,7 +186,7 @@ var myQ = (function() {
 
 	return {
 
-		//below are the various api methods..
+		//below are the various api methods..all methods return es6-promise objects.
 
     		//Returns devices on your account 
 		getDevices : function(username,password) {
