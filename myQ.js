@@ -8,7 +8,7 @@
 /*       MyQDeviceTypeName: 'GarageDoorOpener' or TypeId: 47. Use 
 /*       the corresponding 'DeviceId' attribute as the deviceId.
 /* 
-/* 10/02/2014 - Tito Mathews 								- Initial Coding
+/* 10/02/2014 - Tito Mathews 			- Initial Coding
 /*
 /*************************************************************************************/
 
@@ -74,11 +74,11 @@ var myQ = (function() {
 			};
 
 			var body = {};
-  		body.DeviceId =deviceId,
-   		body.ApplicationId =this.appKey,
+  			body.DeviceId =deviceId,
+   			body.ApplicationId =this.appKey,
 			body.AttributeName ='desireddoorstate',
-      body.AttributeValue =newState,
-      body.securityToken =this.secToken					
+      			body.AttributeValue =newState,
+      			body.securityToken =this.secToken					
 			
 			this.options.body = body;
 
@@ -188,7 +188,7 @@ var myQ = (function() {
 
 		//below are the various api methods..
 
-    //Returns devices on your account 
+    		//Returns devices on your account 
 		getDevices : function(username,password) {
 			return myQImpl.getConnection(username, password).then(function(respObj){
 				return myQImpl.getDeviceList()
