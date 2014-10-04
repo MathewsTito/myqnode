@@ -1,4 +1,4 @@
-MyQ
+MyQNode
 ===
 
 This is a NodeJS module that allows you to control your Chamberlain MyQ enabled 
