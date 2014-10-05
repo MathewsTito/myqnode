@@ -1,5 +1,5 @@
 MyQNode
-===
+=======
 
 This is a NodeJS module that allows you to control your Chamberlain MyQ enabled 
 Garage Door Opener. 
@@ -8,7 +8,41 @@ Follow Chamberlain's userguide to install the MyQ Gateway on your network, as we
 to create an account with the myQ portal.
 
 
-Prerequisites
--------------
+Pre-requisites
+--------------
 
-This module depends on es6-promise. Install using "npm install es6-promise".
+	es6-promise
+
+
+
+## Installation
+
+	npm install MyQNode  --save
+
+
+## Usage
+
+	var myQ = require('MyQNode').myQ;
+	var Promise = require('es6-promise').Promise
+
+	myQ.getDevices('<userid>','<password>')
+	   .then(function(respObj){
+	        console.log(respObj); 
+	   },
+	   function(respObj){
+	        console.log("Error executing method "+respObj);
+           }
+        );
+
+
+	myQ.openDoor('<userid>','<password>','<deviceId>')
+	   .then(function(state){
+          	console.log("Sucessfully Opened Door,"+state);
+	   },
+           function(state){
+           	console.log("Error Opening Door",+state);
+	   }
+        );
+
+
+
