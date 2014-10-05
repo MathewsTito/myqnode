@@ -1,6 +1,6 @@
 {
   "name": "myqnode",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "An utility to control Chamberlain's MyQ enabled Garage Door Openers.",
   "main": "myQ.js",
   "scripts": {
