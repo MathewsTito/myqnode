@@ -17,12 +17,12 @@ Pre-requisites
 
 ## Installation
 
-	npm install MyQNode  --save
+	npm install myqnode --save
 
 
 ## Usage
 
-	var myQ = require('MyQNode').myQ;
+	var myQ = require('myqnode').myQ;
 	var Promise = require('es6-promise').Promise
 
 	myQ.getDevices('<userid>','<password>')
