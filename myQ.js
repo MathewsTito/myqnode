@@ -217,7 +217,7 @@ var myQ = (function() {
 		//Closes the garage door with the given device id.
 		closeDoor : function(username, password, deviceId) {
 			return myQImpl.getConnection(username, password).then(function(respObj){
-				return myQImpl.setDeviceStatus(deviceId,2);
+				return myQImpl.setDeviceStatus(deviceId,0);
 			}).then(function(respObj){
 				return respObj.ReturnCode;
 			});
